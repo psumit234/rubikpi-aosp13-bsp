@@ -1,0 +1,6 @@
+<manifest version="1.0" type="device" target-level="7">
+    <!--
+      Android 13 device VINTF manifest scaffold.
+      Add only HALs that are actually implemented and packaged by this product.
+    -->
+</manifest>

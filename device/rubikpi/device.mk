@@ -1,7 +1,7 @@
 # Device product configuration for Rubik Pi.
 # This file is where Android packages and board-specific product settings are defined.
 
-LOCAL_PATH := device/mirafra/rubikpi
+LOCAL_PATH := device/rubikpi
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
@@ -11,7 +11,7 @@ PRODUCT_NAME := aosp_rubikpi
 PRODUCT_DEVICE := rubikpi
 PRODUCT_BRAND := rubikpi
 PRODUCT_MODEL := RubikPi
-PRODUCT_MANUFACTURER := Mirafra
+PRODUCT_MANUFACTURER := Rubik Pi
 
 # The vendor image is the verified Rubik Pi FlatBuild prebuilt. Keep its HAL,
 # init, VINTF, firmware, and SELinux contents intact.

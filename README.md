@@ -1,10 +1,10 @@
 # Rubik Pi 3 Android 13 device and vendor configuration
 
-This repository groups the Rubik Pi Android device tree and Mirafra vendor
+This repository groups the Rubik Pi Android device tree and Rubik Pi vendor
 configuration under the same paths expected by the AOSP build:
 
-- `device/mirafra/rubikpi`
-- `vendor/mirafra/rubikpi`
+- `device/rubikpi`
+- `vendor/rubikpi`
 
 ## Use in an AOSP checkout
 

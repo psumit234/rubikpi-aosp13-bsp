@@ -9,14 +9,14 @@ PRODUCT_NAME := aosp_rubikpi
 PRODUCT_DEVICE := rubikpi
 PRODUCT_BRAND := rubikpi
 PRODUCT_MODEL := RubikPi
-PRODUCT_MANUFACTURER := Mirafra
+PRODUCT_MANUFACTURER := Rubik Pi
 PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_PRODUCT_IMAGE := true
 PRODUCT_BUILD_SYSTEM_EXT_IMAGE := true
 PRODUCT_BUILD_ODM_IMAGE := true
 PRODUCT_EXTRA_VNDK_VERSIONS := 30
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := device/mirafra/rubikpi/framework_compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := device/rubikpi/framework_compatibility_matrix.xml
 
 # Bring in the device-specific config.
-$(call inherit-product, device/mirafra/rubikpi/device.mk)
+$(call inherit-product, device/rubikpi/device.mk)

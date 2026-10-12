@@ -1,7 +1,7 @@
 # Board configuration for the Rubik Pi AOSP target.
 # Board values are taken from the Rubik Pi 3 FlatBuild UFS layout.
 
-DEVICE_PATH := device/mirafra/rubikpi
+DEVICE_PATH := device/rubikpi
 
 # Real board data from the Rubik Pi Yocto BSP / device tree:
 # - MACHINE family: qcm6490 / qcs6490
@@ -41,11 +41,11 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD += $(DEVICE_PATH)/prebuilt/vendor_ramdi
 # Partition layout.
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1006579712
 BOARD_VENDORIMAGE_PARTITION_SIZE := 980066304
-BOARD_PREBUILT_VENDORIMAGE := vendor/mirafra/rubikpi/prebuilt/vendor.img
+BOARD_PREBUILT_VENDORIMAGE := vendor/rubikpi/prebuilt/vendor.img
 BOARD_PRODUCTIMAGE_PARTITION_SIZE := 346476544
 BOARD_SYSTEM_EXTIMAGE_PARTITION_SIZE := 782012416
 BOARD_ODMIMAGE_PARTITION_SIZE := 1253376
-BOARD_PREBUILT_ODMIMAGE := vendor/mirafra/rubikpi/prebuilt/odm.img
+BOARD_PREBUILT_ODMIMAGE := vendor/rubikpi/prebuilt/odm.img
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
@@ -92,7 +92,7 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/fstab.rubikpi
 BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy
 
 # Optional platform-specific settings.
-BOARD_VENDOR := mirafra
+BOARD_VENDOR := rubikpi
 DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/manifest.xml
 
 # Keep this minimal and replace with final BSP values as your board is refined.

@@ -11,13 +11,13 @@ configuration under the same paths expected by the AOSP build:
 Copy these two directories into the root of the AOSP checkout, preserving the
 paths above. Then select `aosp_rubikpi-userdebug` with `lunch`.
 
-## Vendor image
+## Prebuilt images
 
-`vendor/mirafra/rubikpi/prebuilt/vendor.img` is approximately 934 MiB. It is
-not committed because GitHub rejects ordinary Git files larger than 100 MiB.
-After cloning this repository, copy the matching vendor image from the Rubik Pi
-FlatBuild into that path. The device build configuration expects it there.
-The smaller ODM image and device prebuilts are included in this repository.
+No `*.img` files are committed. This excludes `vendor.img` (approximately
+934 MiB), as well as `odm.img` and `dtbo.img`. The `.gitignore` rule keeps all
+image files out of future commits. For local builds, obtain the matching image
+files from the Rubik Pi FlatBuild and place them at the paths expected by the
+device configuration.
 
 Before redistributing vendor-derived binaries, confirm their applicable
-redistribution terms. The large vendor image is intentionally excluded.
+redistribution terms.
